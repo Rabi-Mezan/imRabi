@@ -38,7 +38,8 @@
 
 
 <body style="font-family: lato; background-color: #EBEBEB; overscroll-behavior-x: none;">
-    <section class="nav">
+
+    <section class="nav sticky top-0 scr">
         <nav class="bg-black">
             <div class="mx-auto lg:max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div class="relative flex h-16 items-center justify-between">
@@ -73,23 +74,29 @@
                     </div>
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="flex flex-shrink-0 items-center">
-                            <img class="h-10 w-auto" src="/Assests/logo.png" alt="Your Company">
+                            <a href="#">
+                                <img class="h-8 w-auto" src="/Assests/logo2.png" alt="Your Company">
+
+                            </a>
+
                         </div>
 
                     </div>
                     <div
                         class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                        <div class="hidden sm:ml-6 sm:block" style="font-family: lato;letter-spacing: 3px;">
+                        <div class="hidden sm:ml-6 sm:block" style="font-family: lato;letter-spacing: 2px;">
                             <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 
-                                <a href="#home"
-                                    class="text-gray-300 hover:underline hover:hover:decoration-solid hover:text-white  rounded-md px-3 py-2 text-sm font-medium">Home</a>
+                                <a href="#services"
+                                    class="text-gray-300 hover:underline hover:hover:decoration-solid hover:text-white  px-3 py-2 text-sm font-medium">services.</a>
                                 <a href="#works"
-                                    class="text-gray-300 hover:underline hover:hover:decoration-solid hover:text-white rounded-md px-3 py-2 text-sm font-medium">Works</a>
+                                    class="text-gray-300 hover:underline hover:hover:decoration-solid hover:text-white  px-3 py-2 text-sm font-medium">works.</a>
                                 <a href="#contact"
-                                    class="bg-purple-700 text-white rounded-full px-4 py-2 my-auto text-sm font-normal"
-                                    aria-current="page">Hire Me</a>
+                                    class="bg-black border border-purple-700 hover:bg-purple-700  text-white rounded-full px-4 py-2 my-auto text-xs font-normal"
+                                    aria-current="page">hire me
+                                    <span><i class="fa-solid fa-arrow-right text-center ms-2"></i></span>
+                                </a>
                             </div>
                         </div>
 
@@ -119,19 +126,21 @@
 
     <section id="home" class="bg-black lg:h-auto   lg:pb-40 pb-20">
 
-        <h1 class="text-purple-600 pt-32  text-center lg:text-5xl text-3xl " style="font-family: Righteous;">Rabiul
+        <h1 class="text-purple-700 pt-24  text-center lg:text-5xl text-4xl " style="font-family: Righteous; ">Rabiul
             Islam
         </h1>
-        <p class="text-gray-300 text-center tracking-widest font-extralight mt-3 lg:w-full lg:font-sm ">Frontend
+        <p
+            class="text-gray-300  text-center tracking-widest font-extralight mt-3 lg:w-full lg:font-sm  lg:text-sm text-xs ">
+            Frontend
             Developer &
             UX/UI Designer
         </p>
 
         <div class="follow-me mt-10 text-center font-extralight">
             <small class="text-purple-300">Follow Me On</small>
-            <hr class="w-24 bg-gray-700 mx-auto">
+            <hr class="w-28 bg-gray-700 mx-auto">
 
-            <div class="social-icon w-16 mt-2 flex   justify-between mx-auto align-center">
+            <div class="social-icon text-xl  w-20 mt-2 flex   justify-between mx-auto align-center">
                 <a target="_blank" href="https://www.behance.net/rabiulislam07">
                     <i class="fa-brands fa-square-behance text-purple-400 hover:text-white"></i>
                 </a>
@@ -153,13 +162,12 @@
 
     <!-------------------- what I do start//services ---------------->
 
-    <section id="" class="services lg:mt-40 mt-20 mb-30">
+    <section id="services" class="services lg:mt-40 mt-20 mb-30">
 
 
         <h2 class="lg:text-2xl text-xl font-semibold text-gray-500 text-center tracking-wide">WHAT I <span
-                class="lg:text-4xl text-3xl font-bold tracking-tight" style="color: #834F96;">do.</span></h2>
-        <p
-            class="lg:w-1/3  lg:mx-0 md:mx-8 text-sm text-gray-700 text-center tracking-widest font-extralight mt-3 lg:mx-auto">
+                class="lg:text-4xl text-3xl font-bold tracking-tight" style="color: #834f96;">do.</span></h2>
+        <p class="lg:w-1/3 w-3/4   text-sm text-gray-700 text-center tracking-widest font-extralight mt-3 mx-auto">
             Blending
             UX/UI
             design
@@ -167,19 +175,19 @@
             frontend
             mastery, I craft digital experiences that harmonize aesthetics and functionality</p>
 
-        <div class="lg:w-3/4 w-full mx-auto grid lg:grid-cols-3 grid-cols-1 gap-4 justify-center lg:mt-28 mt-10 ">
+        <div class="lg:w-3/4 w-full mx-auto grid lg:grid-cols-3 grid-cols-1 gap-4  justify-center lg:mt-28 mt-10 ">
 
-            <div class="bg-white lg:mx-2 mx-5 p-5 rounded-md shadow-sm">
+            <div class="bg-white lg:mx-2 mx-10 p-5 rounded-md shadow-sm">
                 <img class="w-20 h-auto mx-auto" src="/Assests/material-symbols_desktop-mac-outline.png" alt="">
                 <hr class="w-24 h-1 bg-gray-700 mx-auto">
                 <h3 class="text-xl text-center mt-3 " style="color: #834F96;">Web Development</h3>
             </div>
-            <div class="bg-white lg:mx-2 mx-5 p-5 rounded-md   shadow-md">
+            <div class="bg-white lg:mx-2 mx-10 p-5 rounded-md   shadow-sm">
                 <img class="w-20 h-auto mx-auto" src="/Assests/mingcute_vector-bezier-line.png" alt="">
                 <hr class="w-24 h-1 mt-0 bg-gray-700 mx-auto">
                 <h3 class="text-xl text-center mt-3" style="color: #834F96;">UX/UI Designing</h3>
             </div>
-            <div class="bg-white lg:mx-2 mx-5 p-5 rounded-md  shadow-sm">
+            <div class="bg-white lg:mx-2 mx-10 p-5 rounded-md  shadow-sm">
                 <img class="w-16 h-16 mx-auto" src="/Assests/Vector.png" alt="">
                 <hr class="w-24 h-1 mt-3 bg-gray-700 mx-auto">
                 <h3 class="text-xl text-center mt-3" style="color: #834F96;">WordPress Designing</h3>
@@ -195,7 +203,7 @@
     <!-------------------- recent works section starts -------------->
 
 
-    <section id="works" class="recent-works mt-36 mb-20">
+    <section id="works" class="recent-works lg:mt-36 mt-20 mb-20">
 
         <p class="text-gray-400 text-center text-md font-extralight  mx- tracking-widest">Take A look At </p>
         <h2 class="lg:text-2xl text-xl font-semibold text-gray-500 text-center tracking-wide">MY RECENT <span
@@ -205,57 +213,57 @@
         <div class="flex lg:flex-row flex-col w-3/4 mx-auto justify-between my-20">
 
             <div class="lg:my-36 ">
-                <p class="text-purple-400  text-md font-extralight  mx- tracking-widest">Web Design , Wordpress </p>
-                <h3 class="lg:text-3xl text-xl lg:w-2/3  mt-3" style="color:#828282;">Travel Agency Website Design and
+                <p class="text-purple-400  text-md font-light  mx- tracking-widest">Web Design , Wordpress </p>
+                <h3 class="lg:text-3xl text-xl lg:w-2/3  mt-2" style="color:#828282;">Travel Agency Website Design and
                     Build
                 </h3>
 
                 <a target="_blank" href="http://demotwo.infinityfreeapp.com/"
-                    class="w-52 flex justify-between btn btn-md mt-10 border border-2 border-purple-300  px-5 py-2 rounded-full text-sm text-gray-500 hover:bg-purple-800 hover:text-white">See
+                    class="w-44 flex justify-between btn btn-md lg:mt-10 mt-5 border border-2 border-purple-300  px-5 py-2 rounded-full text-sm text-gray-500 hover:bg-purple-800 hover:text-white">See
                     This
                     Project
                     <span>
-                        <i class="fa-solid fa-arrow-right text-center ms-5"></i>
+                        <i class="fa-solid fa-arrow-right text-center ms-3"></i>
                     </span></a>
             </div>
-            <img class="lg:w-1/2 lg:mt-0 mt-10" src="/Assests/resized-images/travia-mockup-portffolio.png" alt="">
+            <img class="lg:w-1/2 lg:mt-0 mt-10  " src="/Assests/resized-images/travia-mockup-portffolio.png" alt="">
 
         </div>
-        <!-- project 1 -->
-        <div class="flex lg:flex-row flex-col w-3/4 mx-auto justify-between lg:my-20 mb-10">
+        <!-- project 2 -->
+        <div class="flex lg:flex-row flex-col w-3/4 mx-auto justify-between lg:my-20 lg:mb-10">
 
             <div class="lg:my-36 ">
-                <p class="text-purple-400  text-md font-extralight  mx- tracking-widest">Web Design, ReactJs, Bootstrap
+                <p class="text-purple-400  text-md font-light  mx- tracking-widest">Web Design, ReactJs, Bootstrap
                 </p>
-                <h3 class="lg:text-3xl text-xl lg:w-2/3  mt-3" style="color:#828282;">Realstate Company Website Design
+                <h3 class="lg:text-3xl text-xl lg:w-2/3  mt-2" style="color:#828282;">Realstate Company Website Design
                     and Build</h3>
 
                 <a target="_blank" href="https://homee-d9f69.web.app/"
-                    class="w-52 flex justify-between btn btn-md mt-10 border border-2 border-purple-300  px-5 py-2 rounded-full text-sm text-gray-500 hover:bg-purple-800 hover:text-white">See
+                    class="w-44 flex justify-between btn btn-md lg:mt-10 mt-5 border border-2 border-purple-300  px-5 py-2 rounded-full text-sm text-gray-500 hover:bg-purple-800 hover:text-white">See
                     This
                     Project
                     <span>
-                        <i class="fa-solid fa-arrow-right text-center ms-5"></i>
+                        <i class="fa-solid fa-arrow-right text-center ms-2"></i>
                     </span></a>
             </div>
             <img class="lg:w-1/2 lg:mt-0 mt-10" src="/Assests/resized-images/hommie-mockup.png" alt="">
 
         </div>
-        <!-- project 1 -->
-        <div class="flex lg:flex-row flex-col w-3/4 mx-auto justify-between lg:my-24">
+        <!-- project 3 -->
+        <div class="flex lg:flex-row flex-col w-3/4 mx-auto justify-between lg:my-20 my-16">
 
             <div class="lg:my-36 ">
-                <p class="text-purple-400  text-md font-extralight  mx- tracking-widest">Web Design , Wordpress </p>
-                <h3 class="lg:text-3xl text-xl lg:w-2/3  mt-3" style="color:#828282;">Fitness Care Services Website
-                    Design and Build
+                <p class="text-purple-400  text-md font-light   tracking-widest">Web Design , Wordpress </p>
+                <h3 class="lg:text-3xl text-xl lg:w-2/3  mt-2" style="color:#828282;">Fitness Care Services Website UI
+                    Design
                 </h3>
 
                 <a target="_blank" href="#"
-                    class="w-52 flex justify-between btn btn-md mt-10 border border-2 border-purple-300  px-5 py-2 rounded-full text-sm text-gray-500 hover:bg-purple-800 hover:text-white">See
+                    class="w-44 flex justify-between btn btn-md lg:mt-10 mt-5 border border-2 border-purple-300  px-5 py-2 rounded-full text-sm text-gray-500 hover:bg-purple-800 hover:text-white">See
                     This
                     Project
                     <span>
-                        <i class="fa-solid fa-arrow-right text-center ms-5"></i>
+                        <i class="fa-solid fa-arrow-right text-center ms-2"></i>
                     </span></a>
             </div>
             <img class="lg:w-1/2 lg:mt-0 mt-10" src="/Assests/resized-images/powerfly-portfolio-mockup.png" alt="">
@@ -268,12 +276,12 @@
 
     <!---------------- keep in touch section starts ---------------------->
 
-    <section id="contact" class="contact mt-36 mb-40">
+    <section id="contact" class="contact lg:mt-36 lg:mb-40 mb-20">
 
         <h2 class="lg:text-2xl text-xl font-semibold text-gray-500 text-center tracking-wide">GET IN <span
                 class="lg:text-4xl text-2xl font-semibold tracking-tight" style="color: #834F96;">touch.</span></h2>
 
-        <div class="lg:flex w-3/4 mx-auto justify-between my-20">
+        <div class="lg:flex w-3/4 mx-auto justify-between lg:my-20 my-10">
             <div>
                 <h3 class="lg:text-2xl lg:w-2/3  mt-3" style="color:#828282;">FEEL FREE TO CONTACT !</h3>
 
@@ -292,8 +300,8 @@
             </div>
 
             <div class="lg:mt-0 mt-10 lg:mx-end mx-auto">
-                <small class="text-purple-500 mx-end">Follow Me On</small>
-                <hr class="w-24 bg-gray-800 mx-end">
+                <small class="text-purple-500 lg:mx-end">Follow Me On</small>
+                <hr class="lg:w-24 bg-gray-800 mx-end">
                 <div class="social-icon w-16 mt-2 flex justify-between mx-start inline-block align-bottom">
 
 
@@ -318,11 +326,11 @@
 
     <!------------------- footer section starts ---------------------->
 
-    <section class="footer h-56 text-center pt-28 "
-        style="background-image: url(/Assests/fotter-bg.png); background-size: cover;background-position: center;background-repeat: no-repeat;">
+    <section class="footer w-auto text-center h-60 pt-32 "
+        style="background-image: url(/Assests/fotter-bg.png); background-size:cover; background-position:center;background-repeat: no-repeat;">
 
         <small class="text-xs font-extralight text-purple-300 text-center my-auto"> <span><i
-                    class="fa-regular fa-copyright"></i></span>opywrite-2023
+                    class="fa-regular fa-copyright font-light"></i></span>opywrite-2023
             - ALL Right Reserved By Rabi</small>
 
 
@@ -330,6 +338,7 @@
 
 
     </section>
+
 
 
 </body>
