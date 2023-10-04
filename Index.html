@@ -33,11 +33,15 @@
     </style>
 
 
+
+
+
 </head>
 
 
 
 <body style="font-family: lato; background-color: #EBEBEB; overscroll-behavior-x: none;">
+
 
     <section class="nav sticky top-0 scr">
         <nav class="bg-black">
@@ -45,27 +49,18 @@
                 <div class="relative flex h-16 items-center justify-between">
                     <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <!-- Mobile menu button-->
-                        <button type="button"
+                        <button id="mobile-menu-btn" type="button"
                             class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                             aria-controls="mobile-menu" aria-expanded="false">
                             <span class="absolute -inset-0.5"></span>
                             <span class="sr-only">Open main menu</span>
-                            <!--
-                      Icon when menu is closed.
-          
-                      Menu open: "hidden", Menu closed: "block"
-                    -->
-                            <svg class="
-                           hidden block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            <!-- Icon when menu is closed -->
+                            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
-                            <!--
-                      Icon when menu is open.
-          
-                      Menu open: "block", Menu closed: "hidden"
-                    -->
+                            <!-- Icon when menu is open -->
                             <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -76,18 +71,14 @@
                         <div class="flex flex-shrink-0 items-center">
                             <a href="#">
                                 <img class="h-8 w-auto" src="/Assests/logo2.png" alt="Your Company">
-
                             </a>
-
                         </div>
-
                     </div>
                     <div
                         class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <div class="hidden sm:ml-6 sm:block" style="font-family: lato;letter-spacing: 2px;">
                             <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-
                                 <a href="#services"
                                     class="text-gray-300 hover:underline hover:hover:decoration-solid hover:text-white  px-3 py-2 text-sm font-medium">services.</a>
                                 <a href="#works"
@@ -99,21 +90,19 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
             <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="hidden" id="mobile-menu">
+            <div class="hidden sm:hidden" id="mobile-menu">
                 <div class="space-y-1 px-2 pb-3 pt-2">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-
-                    <a href="#"
+                    <a href="#home"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
-                    <a href="#"
+                    <a href="#works"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Works</a>
-                    <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                    <a href="#contact" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
                         aria-current="page">Hire Me</a>
                 </div>
             </div>
@@ -159,6 +148,33 @@
 
 
     <!-- banner end -->
+    <!---------------------- about me start ------------------>
+    <!-- 
+    <section class="about-me lg:mt-40 mt-20 mb-30 w-3/4 mx-auto">
+        <h2 class="lg:text-2xl text-xl font-semibold text-gray-500 text-center tracking-wide">ABOUT <span
+                class="lg:text-4xl text-3xl font-bold tracking-tight" style="color: #834f96;">me.</span></h2>
+
+        <div class="info grid lg:grid-cols-2 lg:my-20">
+            <div class="text-info">
+                <p class="lg:w-full  text-sm text-gray-700 text-left tracking-widest font-extralight mt-3 mx-auto">
+
+                    Hello, I'm Rabiul Islam, a Frontend Developer and a UX/UI Designer hailing from Dhaka, Bangladesh.
+                    <br>
+                    <br>
+                    I'm also a seasoned WordPress Designer. My passion lies in utilizing my skills to create
+                    visually stunning solutions that captivate audiences. This website is a showcase of my creative
+                    journey. Thanks for dropping by!"
+                </p>
+            </div>
+
+        </div>
+
+    </section> -->
+
+
+
+
+
 
     <!-------------------- what I do start//services ---------------->
 
@@ -339,6 +355,19 @@
 
     </section>
 
+
+
+
+
+    <!-- js code for mobile menu toogle-->
+    <script>
+
+        document.querySelector('#mobile-menu-btn').addEventListener('click', function () {
+            document.querySelector('#mobile-menu').classList.toggle('hidden');
+        });
+
+
+    </script>
 
 
 </body>
